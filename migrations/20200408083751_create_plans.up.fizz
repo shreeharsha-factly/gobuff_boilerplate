@@ -1,0 +1,7 @@
+create_table("plans") {
+	t.Column("id", "integer", {primary: true})
+	t.Column("plan_name", "string", {})
+	t.Column("plan_info", "string", {})
+	t.Column("status", "string", {})
+	t.Timestamps()
+}

@@ -1,0 +1,9 @@
+create_table("payments") {
+	t.Column("id", "integer", {primary: true})
+	t.Column("amount", "string", {})
+	t.Column("gateway", "string", {})
+	t.Column("currency_id", "integer", {})
+	t.ForeignKey("currency_id", {"currencies": ["id"]}, {})
+	t.Column("status", "string", {})
+	t.Timestamps()
+}

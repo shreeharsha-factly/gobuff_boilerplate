@@ -1,0 +1,6 @@
+create_table("currencies") {
+	t.Column("id", "integer", {primary: true})
+	t.Column("iso_code", "string", {})
+	t.Column("name", "string", {})
+	t.Timestamps()
+}
